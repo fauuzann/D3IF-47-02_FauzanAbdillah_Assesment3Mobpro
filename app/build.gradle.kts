@@ -66,6 +66,7 @@ dependencies {
     implementation(libs.room.runtime)
     implementation(libs.room.compiler)
 
+    implementation(libs.google.auth)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
@@ -74,4 +75,8 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+}
+
+configurations.all {
+    exclude(group = "com.intellij", module = "annotations")
 }
