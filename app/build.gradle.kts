@@ -67,6 +67,7 @@ dependencies {
     implementation(libs.room.compiler)
 
     implementation(libs.google.auth)
+    implementation(libs.androidx.navigation.compose.jvmstubs)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
